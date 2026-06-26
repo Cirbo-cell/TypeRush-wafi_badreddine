@@ -69,3 +69,8 @@ This project was developed iteratively using AI assistance. Key prompts included
 ## Author
 
 School project demonstrating front-end development fundamentals and interactive JavaScript programming.
+
+PROMPTS:
+
+i want you to make me a "Typerush" game about typing certain words at the maximum possible time, i want it to have functions such as: -word per minute (WPM) -precision calculation -a chrono to check how long the user took to finish -Do not use any database no framework, only front end stuff -i want it to have atleast 5 textes each having from 30-120 words (i want there to be difficulties aswell for each length of a text). (easy, medium, hard) -this is the formule for the precision (correct characters/totale of words written x 100) -when the test is finished i want a menu that shows WPM, precision, time taken, and a small word describing the players performance (you can get creative with this one). -after and before the user is finished i want there to be a start button, which will contain new textes, without reloading the page, and a button to reinitialize all the counters. -i want all scores to be saved for each difficulty in localstorage and to be shown in the page, make sure its responsive. -make sure the entire page works for both desktop users and mobile users. languages you are allowed to use: -HTML5, CSS3, JS, No framework no bibliotheque JS. design: -No backend strictly all front end
+
