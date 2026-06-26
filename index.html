@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRush</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>⌨️ TypeRush</h1>
+
+        <p>
+            Test your typing speed, improve your precision,
+            and become a keyboard legend.
+        </p>
+
+    </header>
+
+
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+    <main class="container">
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <section class="game">
+
+            <!-- Difficulty -->
+
+            <div class="card">
+
+                <h2>Select Difficulty</h2>
+
+                <select id="difficulty">
+
+                    <option value="easy">Easy</option>
+
+                    <option value="medium">Medium</option>
+
+                    <option value="hard">Hard</option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- Live Stats -->
+
+            <div class="stats">
+
+                <div class="stat-box">
+
+                    <h3>WPM</h3>
+
+                    <span id="wpm">0</span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>Accuracy</h3>
+
+                    <span id="accuracy">100%</span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>Time</h3>
+
+                    <span id="timer">00:00</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Progress -->
+
+            <div class="progress-container">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+
+
+            <!-- Text -->
+
+            <div class="text-container">
+
+                <p id="textDisplay">
+                    Press Start to begin...
+                </p>
+
+            </div>
+
+
+
+            <!-- Typing Area -->
+
+            <textarea
+
+                id="textInput"
+
+                placeholder="Start typing here..."
+
+                disabled
+
+            ></textarea>
+
+
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button id="startBtn">
+
+                    ▶ Start
+
+                </button>
+
+                <button id="restartBtn">
+
+                    🔄 Restart
+
+                </button>
+
+                <button id="resetStatsBtn">
+
+                    🗑 Reset Scores
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SCOREBOARD ================= -->
+
+        <aside class="scores">
+
+            <h2>🏆 Best Scores</h2>
+
+            <div class="score-card">
+
+                <h3>Easy</h3>
+
+                <ul id="easyScores">
+
+                    <li>No scores yet</li>
+
+                </ul>
+
+            </div>
+
+            <div class="score-card">
+
+                <h3>Medium</h3>
+
+                <ul id="mediumScores">
+
+                    <li>No scores yet</li>
+
+                </ul>
+
+            </div>
+
+            <div class="score-card">
+
+                <h3>Hard</h3>
+
+                <ul id="hardScores">
+
+                    <li>No scores yet</li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- ================= RESULTS MODAL ================= -->
+
+    <div id="resultModal" class="modal">
+
+        <div class="modal-content">
+
+            <h2>🎉 Test Finished!</h2>
+
+            <p>
+
+                <strong>Difficulty:</strong>
+
+                <span id="finalDifficulty"></span>
+
+            </p>
+
+            <p>
+
+                <strong>WPM:</strong>
+
+                <span id="finalWPM"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Accuracy:</strong>
+
+                <span id="finalAccuracy"></span>
+
+            </p>
+
+            <p>
+
+                <strong>Time:</strong>
+
+                <span id="finalTime"></span>
+
+            </p>
+
+            <h3 id="performanceTitle"></h3>
+
+            <button id="playAgain">
+
+                Play Again
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            TypeRush • HTML5 • CSS3 • Vanilla JavaScript
+
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
